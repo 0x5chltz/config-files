@@ -25,3 +25,17 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 vim.opt.scrolloff = 10
 vim.opt.confirm = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.opt.encoding = "utf-8"
+vim.opt.visualbell = true
+vim.opt.fillchars = { eob = " " }
+
+vim.opt.laststatus = 3  -- for avante
+
+if vim.fn.has("termguicolors") == 1 then
+  vim.opt.termguicolors = true
+end
+

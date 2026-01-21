@@ -46,3 +46,21 @@ map("n", "<Tab>", ":BufferNext<CR>", { desc = "Move to next tab", noremap = true
 map("n", "<S-Tab>", ":BufferPrevious<CR>", { desc = "Move to previous tab", noremap = true })
 map("n", "<leader>x", ":BufferClose<CR>", { desc = "Buffer close", noremap = true })
 map("n", "<A-p>", ":BufferPin<CR>", { desc = "Pin buffer", noremap = true })
+
+map("n", "<MiddleMouse>", "<Nop>")
+map("i", "<MiddleMouse>", "<Nop>")
+
+map("n", "<2-MiddleMouse>", "<Nop>")
+map("i", "<2-MiddleMouse>", "<Nop>")
+
+map("n", "<3-MiddleMouse>", "<Nop>")
+map("i", "<3-MiddleMouse>", "<Nop>")
+
+map("n", "<4-MiddleMouse>", "<Nop>")
+map("i", "<4-MiddleMouse>", "<Nop>")
+
+map("n", "g/", ":noh<CR>")
+
+map('n', '<leader>rn', function()
+  vim.lsp.buf.rename()
+end, { noremap = true, silent = true })
